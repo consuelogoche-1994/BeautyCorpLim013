@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "BeautyCorp"
+  "defaultProject": "BeautyCorp",
+  "cli": {
+    "analytics": "b8fdd24a-b27f-4e04-a10d-ca65d37a4757"
+  }
 }
