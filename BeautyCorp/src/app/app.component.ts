@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-declare const M: any;
+
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,6 @@ declare const M: any;
 export class AppComponent {
   title = 'BeautyCorp';
   ngOnInit(): void {
-    M.AutoInit();
+
   }
 }
