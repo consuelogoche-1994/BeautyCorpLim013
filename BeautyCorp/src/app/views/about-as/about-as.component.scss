@@ -1,0 +1,34 @@
+//carrusel
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+.carousel{
+    width: 100%;
+    height: 100vh;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+//About US
+.aboutUs h2{
+    text-align: center;
+    color: #122048;
+}
+.aboutUs p{
+    font-size: calc(0.8em + 0.8vw);
+    color:#333F49;
+}
+
+//Media Query
+@media screen and (max-width: 1024px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
