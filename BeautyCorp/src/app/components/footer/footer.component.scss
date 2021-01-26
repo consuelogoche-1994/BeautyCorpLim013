@@ -1,0 +1,58 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #B4C7D9;
+    margin: 0;
+}
+footer img {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1vw;
+}
+footer h3 {
+    font-size: large;
+    color: #622E8B;
+    font-family: 'Satisfy', cursive;
+}
+footer p {
+    font-size: small;
+    color: #385CAD;
+}
+.concept {
+    padding: 0.5% 4%;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
+}
+.socialMedia a{
+    flex-direction: row;
+}
+.socialMedia:hover a{
+    cursor: pointer;
+}
+#logo{
+    margin-top: 5vw;
+}
+.structure {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.buttonEmailFooter{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #ffffff;
+    background-color: #d33744;
+    border-radius: 6px;
+}
+#styleEmail{
+    background-color: #eee;
+    border: 0;
+    height:2vw;
+}
