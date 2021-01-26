@@ -1,0 +1,25 @@
+<!--------------------------------------- navbar ------------------------------------>
+<div (window:scroll)="scroll($event)">
+    <nav [ngClass]="isScrollActive===true?'scrollActive':''">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo logo">Beauty Corp</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" menu fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a routerLink="/">INICIO</a></li>
+            <li><a href="badges.html">SOBRE NOSOTROS</a></li>
+            <li><a routerLink="ourCatalogs">NUESTRAS CATÁLOGOS</a></li>
+            <li><a href="mobile.html">CONTÁCTANOS</a></li>
+            </ul>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
