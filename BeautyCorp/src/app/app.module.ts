@@ -10,6 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ItemBrandComponent } from './components/item-brand/item-brand.component';
 import { AboutAsComponent } from './views/about-as/about-as.component';
 import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.component';
+import { FooterEsikaComponent } from './Components/footer-esika/footer-esika.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.componen
     ItemBrandComponent,
     AboutAsComponent,
     OurCatalogsComponent,
+    FooterEsikaComponent,
   ],
   imports: [
     BrowserModule,
