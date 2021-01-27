@@ -8,9 +8,6 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 })
 export class ItemProductComponent implements OnInit {
 products:any=[];
-data(){
-  console.log(this.products);
-}
   constructor(private firestoreService: FirebaseService) { }
 
   ngOnInit(): void {
@@ -33,4 +30,4 @@ data(){
       this.price = this.quantity * this.priceS;
     }
   }
-
+}
