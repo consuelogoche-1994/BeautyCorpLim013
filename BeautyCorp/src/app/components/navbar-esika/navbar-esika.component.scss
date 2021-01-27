@@ -1,18 +1,16 @@
 //barra de navegación
 nav{
     position: fixed;
-    background: rgb(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
 .logo {
-    font-family: 'Satisfy', cursive;
     padding-left: 50px;
     padding-right: 50px;
     font-size: calc(1.3em + 1.3vw);
 }
-
 .scrollActive{
-    background-color: #f1f1f1;
+    background-color: #fff;
     .right a{
         color:#333F49;
     }
@@ -23,6 +21,7 @@ nav{
         color:#333F49;
     }
 }
+
 //Media Query
 @media screen and (max-width: 1024px) {
     .logo {
