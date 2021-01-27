@@ -18,7 +18,8 @@ export class NavbarEsikaComponent implements OnInit {
   public products:any;
   constructor() { }
   ngOnInit(): void {
-    this.products = [{name: "esauDesa",price:2000,type:"desa"},{name: "esau",price:2000,type:"nodesa"}];
+    const productsLocal = JSON.parse(localStorage.getItem("products"));
+    this.products = productsLocal.products;
   }
 cart(){
   //alert("sora");
