@@ -15,10 +15,22 @@ export class NavbarEsikaComponent implements OnInit {
       this.isScrollActive=false;
     }
   }
-
+  public products:any;
   constructor() { }
-
   ngOnInit(): void {
+    this.products = [{name: "esauDesa",price:2000,type:"desa"},{name: "esau",price:2000,type:"nodesa"}];
   }
-
+cart(){
+  //alert("sora");
+  
+  if(document.querySelector("#shopping-cart.hidden")){
+    document.querySelector("#shopping-cart").classList.remove("hidden");
+  }else{
+    document.querySelector("#shopping-cart").classList.add("hidden");
+  }
+}
+exit(){
+  console.log("hola");
+  document.querySelector(".item-cart").classList.add("hidden");
+}
 }

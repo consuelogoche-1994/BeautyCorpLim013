@@ -14,13 +14,23 @@ data(){
   constructor(private firestoreService: FirebaseService) { }
 
   ngOnInit(): void {
-
-    this.firestoreService.getProducts().subscribe((catsSnapshot) => {
-      this.products = [];
-      catsSnapshot.forEach((catData: any) => {
-        this.products.push({id: catData.payload.doc.id, data: catData.payload.doc.data()});
-      })
-    });
-
   }
-}
+  quantity: number = 1;
+  priceS = 60;
+  price=this.priceS;
+  i = 1;
+  plus() {
+    if (this.i != 5) {
+      this.i++;
+      this.quantity = this.i;
+      this.price = this.quantity * this.priceS;
+    }
+  }
+  minus() {
+    if (this.i != 1) {
+      this.i--;
+      this.quantity = this.i;
+      this.price = this.quantity * this.priceS;
+    }
+  }
+
