@@ -238,3 +238,10 @@ a {
   input[type="radio"]:checked ~ label {
     color: #050505;
   }
+
+  .price input {
+    width: 30px;
+    border-bottom: none;
+    margin-left: 20px;
+    height: 30px;
+}

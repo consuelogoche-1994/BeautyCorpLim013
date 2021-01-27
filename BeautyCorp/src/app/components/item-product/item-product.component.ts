@@ -11,18 +11,22 @@ export class ItemProductComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  quantity:number=1;
-i=1
-  plus(){
-    if(this.i !=5){
+  quantity: number = 1;
+  priceS = 60;
+  price=this.priceS;
+  i = 1;
+  plus() {
+    if (this.i != 5) {
       this.i++;
-      this.quantity=this.i;
+      this.quantity = this.i;
+      this.price = this.quantity * this.priceS;
     }
   }
-  minus(){
-    if(this.i !=1){
+  minus() {
+    if (this.i != 1) {
       this.i--;
-      this.quantity=this.i;
+      this.quantity = this.i;
+      this.price = this.quantity * this.priceS;
     }
   }
 
