@@ -1,15 +1,57 @@
-#stepsShop{
-    background-color: transparent;
-    color:#8D93BC;
+img {
+  margin: 2vw;
+}
+.register {
+  width: 60vw;
+  border-right: solid rgb(136, 136, 135) 1px;
+  padding: 4vw;
+}
+.detail {
+  width: 40vw;
+}
+#start {
+  width: 15vw;
+  height: 2vw;
+}
+input[type="text"] {
+  height: 30px;
+}
+.formInformation {
+  width: 50vw;
+}
+.space {
+  width: 50vw;
+  margin: 1vw;
+}
+h6 {
+  margin-left: 0.5vw;
+  padding: 0.5vw;
+}
+.checkNews {
+  margin: 0vw 1vw;
+  color: violet;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+.checkNews label {
+  padding-left: 1.25em;
+  background: url("https://s3-eu-west-1.amazonaws.com/static.oscargascon.es/wp-content/media/check-radio-sprites.png")
+    no-repeat top left;
+}
+.checkNews input[type="checkbox"] + label {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+.checkNews input[type="checkbox"]:checked + label {
+  background-position: 0 -21px;
+  width: 16px;
+  height: 16px;
+}
+.superContainer{
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-}
-#stepsShop a{
-    background-color: white;
-    color:#8D93BC;
-}
-nav{
-    background-color: transparent;
-    box-shadow: none;
+    flex-direction: row;
+    justify-content: start;
 }

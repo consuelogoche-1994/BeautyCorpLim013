@@ -6,3 +6,8 @@
     color: black;
     margin-left: 30px;
 }
+@media(max-width: 950px){
+    #navPayment a{
+        margin-left: 0;
+    }
+}
