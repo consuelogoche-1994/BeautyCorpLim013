@@ -11,6 +11,14 @@ import { ItemBrandComponent } from './components/item-brand/item-brand.component
 import { AboutAsComponent } from './views/about-as/about-as.component';
 import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.component';
 import { FooterEsikaComponent } from './Components/footer-esika/footer-esika.component';
+import { NavbarEsikaComponent } from './components/navbar-esika/navbar-esika.component';
+import { HomeEsikaComponent } from './views/home-esika/home-esika.component';
+import { MakeupComponent } from './views/makeup/makeup.component';
+import { PerfumeComponent } from './views/perfume/perfume.component';
+import { PersonalCareComponent } from './views/personal-care/personal-care.component';
+import { FacialTreatmentComponent } from './views/facial-treatment/facial-treatment.component';
+import { BodyTreatmentComponent } from './views/body-treatment/body-treatment.component';
+import { AccessoriesComponent } from './views/accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +31,14 @@ import { FooterEsikaComponent } from './Components/footer-esika/footer-esika.com
     AboutAsComponent,
     OurCatalogsComponent,
     FooterEsikaComponent,
+    NavbarEsikaComponent,
+    HomeEsikaComponent,
+    MakeupComponent,
+    PerfumeComponent,
+    PersonalCareComponent,
+    FacialTreatmentComponent,
+    BodyTreatmentComponent,
+    AccessoriesComponent,
   ],
   imports: [
     BrowserModule,

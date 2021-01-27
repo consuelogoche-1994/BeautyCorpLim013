@@ -1,0 +1,34 @@
+<!--------------------------------------- navbar ------------------------------------>
+<div (window:scroll)="scroll($event)">
+    <nav [ngClass]="isScrollActive===true?'scrollActive':''">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo logo">ÉSIKA</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class=" menu fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a routerLink="/esika">INICIO</a></li>
+            <li><a routerLink="makeup">MAQUILLAJE</a></li>
+            <li><a routerLink="perfume">PERFUMES</a></li>
+            <li><a routerLink="personalCare">CUIDADO PERSONAL</a></li>
+            <li><a routerLink="facialTreatment">TRATAMIENTO FACIAL</a></li>
+            <li><a routerLink="bodyTreatment">TRATAMIENTO CORPORAL</a></li>
+            <li><a routerLink="accessories">ACCESORIOS COSMÉTICOS</a></li>
+            <li><a routerLink="/"><i class="fas fa-user"></i></a></li>
+            <li><a routerLink="/"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a routerLink="/"><i class="fas fa-search"></i></a></li>
+            
+
+            </ul>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a routerLink="/esika">INICIO</a></li>
+            <li><a routerLink="makeup">MAQUILLAJE</a></li>
+            <li><a routerLink="perfume">PERFUMES</a></li>
+            <li><a routerLink="personalCare">CUIDADO PERSONAL</a></li>
+            <li><a routerLink="facialTreatment">TRATAMIENTO FACIAL</a></li>
+            <li><a routerLink="bodyTreatment">TRATAMIENTO CORPORAL</a></li>
+            <li><a routerLink="accessories">ACCESORIOS COSMÉTICOS</a></li>
+            <li><a routerLink="/">INICIAR SESIÓN</a></li>
+            <li><a routerLink="/">CARRITO DE COMPRAS</a></li>
+        </ul>
+    </nav>
+</div>
