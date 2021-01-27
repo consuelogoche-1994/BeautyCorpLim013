@@ -14,7 +14,6 @@ export class NavbarEsikaComponent implements OnInit {
     }else{
       this.isScrollActive=false;
     }
-    console.log(window.scrollY);
   }
 
   constructor() { }
