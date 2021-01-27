@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CardProductComponent } from './components/card-product/card-product.component';
 import { ItemProductComponent } from './components/item-product/item-product.component';
 import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
 import { EsikaComponent } from './mainViews/esika/esika.component';
@@ -33,7 +34,8 @@ const routes: Routes = [
   ]
 },
 {path:'payments', component:EsikaPaymentsComponent},
-{path:'itemProduct', component:ItemProductComponent}
+{path:'itemProduct', component:ItemProductComponent},
+{path:'card', component:CardProductComponent}
 ];
 
 @NgModule({
