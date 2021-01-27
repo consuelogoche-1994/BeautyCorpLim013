@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html',
-  styleUrls: ['./nav-bar.component.scss']
+  selector: 'app-navbar-esika',
+  templateUrl: './navbar-esika.component.html',
+  styleUrls: ['./navbar-esika.component.scss']
 })
-
-
-export class NavBarComponent implements OnInit {
+export class NavbarEsikaComponent implements OnInit {
   isScrollActive:boolean=false;
 // activar scroll al bajar pantalla
   scroll(event){
-    if(window.scrollY>200){
+    if(window.scrollY>50){
       this.isScrollActive=true;
     }else{
       this.isScrollActive=false;
@@ -19,11 +17,9 @@ export class NavBarComponent implements OnInit {
     console.log(window.scrollY);
   }
 
-  constructor() { 
-  }
+  constructor() { }
 
   ngOnInit(): void {
-
   }
 
 }
