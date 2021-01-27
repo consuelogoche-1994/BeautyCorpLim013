@@ -8,6 +8,16 @@ import { Component, OnInit,Input } from '@angular/core';
 export class CardProductComponent implements OnInit {
   @Input() objProduct: any;
   promotionPrice:number;
+  //modal
+  @Input() childDataOrder: any;
+  modalVisibility:boolean=false;
+  orderDetailSelect:any;
+  showModal(){
+    this.modalVisibility=true;
+  }
+  closeModal(e){
+    this.modalVisibility=false;
+  }
 
   constructor() { }
 
