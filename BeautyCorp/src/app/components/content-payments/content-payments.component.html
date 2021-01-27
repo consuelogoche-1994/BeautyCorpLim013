@@ -1,108 +1,146 @@
 <div class="superContainer flex">
   <div class="flex register">
-    <img src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/steps.png?raw=true">
+    <img id="step2" src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/steps.png?raw=true">
     <h6>Información de contacto</h6>
     <div id="formInformation" class="row">
       <form class="col s12">
         <div class="space row">
-          <div class="input-field col ">
-            <input id="first_name" type="text" class="validate">
+          <div class="col ">
             <label for="first_name">Nombre</label>
+            <input id="first_name" type="text" class="validate">
           </div>
-          <div class="input-field col">
-            <input id="last_name" type="text" class="validate">
+          <div class="col">
             <label for="last_name">Apellido</label>
-          </div>
-        </div>
-        <div class="space row">
-          <div class="input-field col">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Documento - DNI</label>
-          </div>
-          <div class="input-field col">
             <input id="last_name" type="text" class="validate">
-            <label for="last_name">Teléfono</label>
           </div>
         </div>
         <div class="space row">
-          <div class="input-field col">
+          <div class="col">
+            <label for="first_name">Documento - DNI</label>
             <input id="first_name" type="text" class="validate">
-            <label for="first_name">Correo Electrónico</label>
           </div>
+          <div class="col">
+            <label for="last_name">Teléfono</label>
+            <input id="last_name" type="text" class="validate">
+          </div>
+        </div>
+        <div class="space row">
+          <div class="full col">
+            <label for="first_name">Correo Electrónico</label>
+            <input id="first_name" type="text" class="validate">
+          </div>
+        </div>
+        <div class="checkNews">
+          <p>
+            <input type="checkbox" id="test5" />
+            <label for="test5">Quiero recibir noticias y ofertas exclusivas</label>
+          </p>
         </div>
       </form>
     </div>
-    <div class="checkNews">
-      <p>
-        <input type="checkbox" id="test5" />
-        <label for="test5">Quiero recibir noticias y ofertas exclusivas</label>
-      </p>
+    <div class="col s12">
+      <form>
+        <h6>Entrega</h6>
+        <div class="space row">
+          <div class="col">
+            <label for="start">Selecciona fecha de envío:<br></label>
+            <input type="date" id="start" name="trip-start" min="2021-29-01">
+          </div>
+        </div>
+        <h6>Dirección de envío</h6>
+        <div class="space row">
+          <div class="adjust col">
+          <label>Departamento</label>
+          <select class="browser-default">
+            <option value="" disabled selected>Escoge</option>
+            <option value="1">Lima</option>
+            <option value="2">Arequipa</option>
+            <option value="3">San Martín</option>
+          </select>
+        </div>
+        <div class="adjust col">
+          <label>Provincia</label>
+          <select class="browser-default">
+            <option value="" disabled selected>Escoge</option>
+            <option value="1">Cañete</option>
+            <option value="2">Huaura</option>
+            <option value="3">Lima Metropolitana</option>
+          </select>
+        </div>
+        <div class="adjust col">
+          <label>Distrito</label>
+          <select class="browser-default">
+            <option value="" disabled selected>Escoge</option>
+            <option value="1">Barranco</option>
+            <option value="2">Rímac</option>
+            <option value="3">Los Olivos</option>
+          </select>
+      </div>
+      </div>
+      <br>
+      <div class="space row">
+        <div class="full col">
+          <label for="first_name">Dirección</label>
+          <input id="first_name" type="text" class="validate">
+        </div>
+      </div>
+      <div class="space row">
+        <div class="full col">
+          <label for="first_name">Referencia</label>
+          <input id="first_name" type="text" class="validate">
+        </div>
+      </div>
+      <div id="continue" class="space row">
+        <a class="waves-effect waves-light btn">Continuar</a>
+      </div>
+    </form>
+
+    <br>
+        <hr>
+    <div class="politics space row">
+        <a>Política de reembolso</a>
+        <a>Política de privacidad</a>
+      </div>
     </div>
-    <div>
-      <h6>Entrega</h6>
-      <label for="start">Selecciona fecha de envío:<br></label>
-      <input type="date" id="start" name="trip-start" min="2021-29-01">
-    </div>
-    <label>Departamento</label>
-    <select class="browser-default">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Provincia</label>
-    <select class="browser-default">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <label>Distrito</label>
-    <select class="browser-default">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-    <div class="input-field col s6">
-      <input id="first_name" type="text" class="validate">
-      <label for="first_name">Dirección</label>
-    </div>
-    <div class="input-field col s6">
-      <input id="first_name" type="text" class="validate">
-      <label for="first_name">Referencia</label>
-    </div>
-    <a class="waves-effect waves-light btn">Continuar</a>
-    <hr>
-    <a>Política de reembolso </a>
-    <a> Política de privacidad</a>
   </div>
   <div class="flex detail">
     <div class="col s12 m7">
-      <h2 class="header">Horizontal Card</h2>
       <div class="card horizontal">
         <div class="card-image">
-          <img src="https://lorempixel.com/100/190/nature/6">
+          <img src="https://cdn.shopify.com/s/files/1/2770/4310/products/esika-estados-unidos-plumon-tattoo-punta-fina.jpg?v=1598758790">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
+            <div class="description">
+              <h6 class="col">Delineador</h6>
+              <p>S/50.00</p>
+            </div>
+            <p>Color: negro</p>
+            <p>Cantidad: 1 unidad</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="input-field col s6">
-      <label for="first_name">¿Tienes algún cupón de descuento?</label>
-      <input  id="first_name" type="text" class="validate">
+    <div class="order col s6">
+      <div>
+        <label for="discount">¿Tienes algún cupón de descuento?</label>
+        <input  id="discount" type="text" class="validate">
     </div>
-    <a class="waves-effect waves-light btn">Stuff</a>
+      <a id="apply"class="apply waves-effect waves-light btn">Aplicar</a>
+    </div>
     <hr>
-    <p>Subtotal: 000</p>
-    <p>Costo de envío: 000</p>
+    <div class="description">
+    <p>Subtotal:</p>
+    <p>S/00.00</p>
+  </div>
+  <div class="description">
+    <p>Costo de envío: </p>
+    <p>S/00.00</p>
+  </div>
     <hr>
-    <p>Total: 000</p>
+    <div class="description">
+      <p>Total: </p>
+      <p>S/00.00</p>
+    </div>
   </div>
 </div> 
