@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter} from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 
 @Component({
@@ -8,6 +8,14 @@ import { FirebaseService } from 'src/app/services/firebase.service';
 })
 export class ItemProductComponent implements OnInit {
 products:any=[];
+  @Input() visible:boolean;
+  @Input() detailProduct:any;
+  @Output() close:EventEmitter<boolean>= new EventEmitter;
+  //Cerrar modal
+  closeModal(){
+    this.close.emit(false);
+  }
+
   constructor(private firestoreService: FirebaseService) { }
 
   ngOnInit(): void {

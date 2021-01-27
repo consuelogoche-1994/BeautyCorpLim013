@@ -13,8 +13,14 @@
             <p class="price2">Ahora S/{{promotionPrice}}</p>
             <p class="unid">{{objProduct.salesUnits}} Vendidos</p>
         </div>
-        <div class="card-action">
-            <a href="#" style="color: #8052A4">VER PRODUCTO <i class="fas fa-chevron-right"></i></a>
+        <div class="card-action" (click)="showModal()">
+            <a style="color: #8052A4">VER PRODUCTO <i class="fas fa-chevron-right"></i></a>
         </div>
     </div>
  </section>
+ <app-item-product 
+[visible]="modalVisibility" 
+[detailProduct]="objProduct"
+(close)="closeModal($event)"
+>
+</app-item-product>
