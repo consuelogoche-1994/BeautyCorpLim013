@@ -24,6 +24,7 @@ import { FooterPaymentsComponent } from './components/footer-payments/footer-pay
 import { NavbarPaymentsComponent } from './components/navbar-payments/navbar-payments.component';
 import { ContentPaymentsComponent } from './components/content-payments/content-payments.component';
 import { ItemProductComponent } from './components/item-product/item-product.component';
+import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ItemProductComponent } from './components/item-product/item-product.com
     NavbarPaymentsComponent,
     ContentPaymentsComponent,
     ItemProductComponent,
+    PaymentsNextComponent,
   ],
   imports: [
     BrowserModule,
