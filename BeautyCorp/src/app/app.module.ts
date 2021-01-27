@@ -19,6 +19,11 @@ import { PersonalCareComponent } from './views/personal-care/personal-care.compo
 import { FacialTreatmentComponent } from './views/facial-treatment/facial-treatment.component';
 import { BodyTreatmentComponent } from './views/body-treatment/body-treatment.component';
 import { AccessoriesComponent } from './views/accessories/accessories.component';
+import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
+import { FooterPaymentsComponent } from './components/footer-payments/footer-payments.component';
+import { NavbarPaymentsComponent } from './components/navbar-payments/navbar-payments.component';
+import { ContentPaymentsComponent } from './components/content-payments/content-payments.component';
+import { ItemProductComponent } from './components/item-product/item-product.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +44,11 @@ import { AccessoriesComponent } from './views/accessories/accessories.component'
     FacialTreatmentComponent,
     BodyTreatmentComponent,
     AccessoriesComponent,
+    EsikaPaymentsComponent,
+    FooterPaymentsComponent,
+    NavbarPaymentsComponent,
+    ContentPaymentsComponent,
+    ItemProductComponent,
   ],
   imports: [
     BrowserModule,

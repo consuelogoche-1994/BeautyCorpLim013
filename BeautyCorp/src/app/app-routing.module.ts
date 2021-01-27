@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ItemProductComponent } from './components/item-product/item-product.component';
+import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
 import { EsikaComponent } from './mainViews/esika/esika.component';
 import { HomeComponent } from './mainViews/home/home.component';
 import { AboutAsComponent } from './views/about-as/about-as.component';
@@ -30,6 +32,8 @@ const routes: Routes = [
     {path: 'accessories', component: AccessoriesComponent},
   ]
 },
+{path:'payments', component:EsikaPaymentsComponent},
+{path:'itemProduct', component:ItemProductComponent}
 ];
 
 @NgModule({
