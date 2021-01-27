@@ -1,3 +1,119 @@
 <app-navbar-payments></app-navbar-payments>
-<img src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/step3.png" alt="">
+<div class="superContainer flex">
+    <div class="flex register">
+        <img id="step2"
+            src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/step3.png?raw=true"
+            alt="">
+        <h6>Pago</h6>
+        <div id="formInformation" class="row">
+            <a class="slide waves-effect waves-light btn">Tarjeta de crédito y/o débito</a>
+            <a class="slide waves-effect waves-light btn">Transferencias</a>
+            <div class="creditCard">
+                <div>
+                    <div class="space row">
+                        <div class="adjust col">
+                            <label>Tipo</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected>Escoge</option>
+                                <option value="1">Crédito</option>
+                                <option value="2">Débito</option>
+                            </select>
+                        </div>
+                        <div class="adjust col ">
+                            <label for="first_name">Número de la tarjeta</label>
+                            <input id="first_name" type="number" class="validate">
+                        </div>
+                    </div>
+                    <div class="space row">
+                        <div class="full col">
+                            <label for="first_name">Nombres y apellidos</label>
+                            <input id="first_name" type="text" class="validate">
+                        </div>
+                    </div>
+                    <div class="space row">
+                        <div class="adjust col">
+                            <div class="col">
+                                <label for="last_name">Mes y año</label><br>
+                                <input id="last_name" type="month" class="validate">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="last_name">Código de seguridad</label>
+                            <input id="last_name" type="text" class="validate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="transference">
+                <p>Realiza una Transferencia bancaria mediante tu banca por internet 
+                    O
+                    Realiza un Depósito en efectivo a nombre de PAGOEFECTIVO.</p>
+                    <img src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/banks.png">
+            </div>
+            <div class="checkNews">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Declaro que he leído y aceptado los Términos y Condiciones</label>
+                </p>
+            </div>
+            <div class="payButtons">
+                <div id="back" class="space row">
+                    <a class="waves-effect waves-light btn">Volver</a>
+                </div>
+                <div id="continue" class="space row">
+                    <a class="adjust waves-effect waves-light btn">Finalizar compra</a>
+                </div>
+            </div>
+            <div class="col s12">
+                <br>
+                <hr>
+                <div class="politics space row">
+                    <a>Política de reembolso</a>
+                    <a>Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="flex detail">
+            <div class="col s12 m7">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/2770/4310/products/esika-estados-unidos-plumon-tattoo-punta-fina.jpg?v=1598758790">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="description">
+                                <h6 class="col">Delineador</h6>
+                                <p>S/50.00</p>
+                            </div>
+                            <p>Color: negro</p>
+                            <p>Cantidad: 1 unidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order col s6">
+                <div>
+                    <label for="discount">¿Tienes algún cupón de descuento?</label>
+                    <input id="discount" type="text" class="validate">
+                </div>
+                <a id="apply" class="apply waves-effect waves-light btn">Aplicar</a>
+            </div>
+            <hr>
+            <div class="description">
+                <p>Subtotal:</p>
+                <p>S/00.00</p>
+            </div>
+            <div class="description">
+                <p>Costo de envío: </p>
+                <p>S/00.00</p>
+            </div>
+            <hr>
+            <div class="description">
+                <p>Total: </p>
+                <p>S/00.00</p>
+            </div>
+        </div>
+</div>
 <app-footer-payments></app-footer-payments>
