@@ -1,0 +1,13 @@
+#navPayment {
+    background-color: #F6F6F6;
+    color: rgb(109, 108, 108);
+}
+#navPayment a{
+    color: black;
+    margin-left: 30px;
+}
+@media(max-width: 950px){
+    #navPayment a{
+        margin-left: 0;
+    }
+}
