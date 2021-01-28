@@ -1,11 +1,12 @@
-.container{
+.containerCat{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-flow: row wrap;
     align-items: center;
+
 }
 .col{
-    width: 580px;
+    width: 500px;
 }
 .card-action{
     display: flex;
@@ -19,6 +20,7 @@
 .card-content p{
     font-size: 1.2rem;
 }
+
 @media screen and (max-width: 1024px) {
     .col {
         width: 100%;

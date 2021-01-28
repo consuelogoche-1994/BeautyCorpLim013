@@ -4,7 +4,7 @@
     <div class="paymentText">
         <img src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/vector.png?raw=true"
         alt="">
-        <h4>¡Ale, gracias por preferir Ésika!</h4>
+        <h4>¡{{customerName}}, gracias por preferir Ésika!</h4>
         <h5>Orden de compra #: <br> 567432</h5>
         <h6>Recibimos tu orden y estamos confirmando tu compra</h6>
         <p>Hemos enviado todos los detalles sobre su compra al correo majo.motta@gmail.com y también puedes revisar el
@@ -16,7 +16,7 @@
             <a href="https://cdn.jotfor.ms/form-templates/screenshots/pdf/425x575_2091054129530046/simple-cash-receipt-template.png" class="waves-effect waves-light btn">Ver pedido</a>
         </div>
         <div id="continue" class="space row">
-            <a [routerLink]="['/esika']" class="adjust waves-effect waves-light btn">Seguir comprando</a>
+            <a (click)="messege()" [routerLink]="['/esika']" class="adjust waves-effect waves-light btn">Seguir comprando</a>
         </div>
     </div>
 </div>

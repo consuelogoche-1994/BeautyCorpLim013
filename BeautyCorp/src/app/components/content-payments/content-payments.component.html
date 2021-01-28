@@ -7,7 +7,7 @@
         <div class="space row">
           <div class="col ">
             <label for="saleName">Nombre</label>
-            <input id="saleName" type="text" class="validate">
+            <input id="saleName" type="text" name="text1" class="validate" [(ngModel)]="customerName">
           </div>
           <div class="col">
             <label for="last_name">Apellido</label>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div id="continue" class="space row">
-        <a [routerLink]="['/esikaPayments', 'paymentsNext']" class="waves-effect waves-light btn" >Continuar</a>
+        <a (click)="sendCustomer()"  [routerLink]="['/esikaPayments', 'paymentsNext']" class="waves-effect waves-light btn" >Continuar</a>
       </div>
     </div>
 
@@ -149,16 +149,16 @@
     <hr>
     <div class="description">
     <p>Subtotal:</p>
-    <p>S/00.00</p>
+    <p>S/{{total}}</p>
   </div>
   <div class="description">
     <p>Costo de envío: </p>
-    <p>S/00.00</p>
+    <p>S/5</p>
   </div>
     <hr>
     <div class="description">
       <p>Total: </p>
-      <p>S/00.00</p>
+      <p>S/{{total+5}}</p>
     </div>
   </div>
 </div> 

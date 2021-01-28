@@ -10,11 +10,14 @@ export class DataService {
   private orderDetailSource = new BehaviorSubject<any>([]);
   currentOrderDetail = this.orderDetailSource.asObservable();
 
+  // servicio para sincronizar nombre de cliente 
+  private customerNameSource = new BehaviorSubject<string>('');
+  currentCustomerName = this.customerNameSource.asObservable();
+
   constructor() { }
 
   // metodo que actualiza la data sincronizada
   changeOrderDetail(orderDetail: any) {
-
       if(orderDetail.status===false){
         this.orderDetailSource['_value'].forEach((ele,i) => {
           if(ele.id===orderDetail.id){
@@ -26,4 +29,9 @@ export class DataService {
         this.orderDetailSource.next(this.orderDetailSource['_value'].concat(orderDetail));
       }
   }
+
+  // metodo que actualiza la data nombre de cliente sincronizado
+changeCustomerName(customerName: string) {
+  this.customerNameSource.next(customerName);
+}
 }

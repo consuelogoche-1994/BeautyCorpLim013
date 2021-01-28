@@ -37,6 +37,7 @@ import { PaymentDoneComponent } from './components/payment-done/payment-done.com
 import { LoginComponent } from './views/login/login.component';
 import { PaymentTransferenceComponent } from './components/payment-transference/payment-transference.component';
 import { PaymentYapeComponent } from './components/payment-yape/payment-yape.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 
 @NgModule({
@@ -71,6 +72,7 @@ import { PaymentYapeComponent } from './components/payment-yape/payment-yape.com
     PaymentYapeComponent,
   ],
   imports: [
+    SweetAlert2Module.forRoot(),
     BrowserModule,
     FormsModule,
     AppRoutingModule,
