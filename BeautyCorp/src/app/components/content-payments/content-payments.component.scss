@@ -1,6 +1,6 @@
-img {
-  margin: 2vw;
-}
+// img {
+//   margin: 2vw;
+// }
 .register {
   width: 55vw;
   border-right: solid #e5e5e5 1px;
@@ -131,10 +131,10 @@ hr{
 .description p{
 margin-left: 2vw;
 }
-.card-image img {
-  width: 10vw;
-  height: 5vw;
-}
+// .card-image img {
+//   width: 10vw;
+//   height: 5vw;
+// }
 @media(max-width:1070px){
   .superContainer{
     display: flex;
@@ -166,11 +166,11 @@ margin-left: 2vw;
   width:40vw;
   height:40vw;
 }
-.card-image img {
-  width:20vw;
-  height:20vw;
-  max-width: 40vw;
-}
+// .card-image img {
+//   width:20vw;
+//   height:20vw;
+//   max-width: 40vw;
+// }
 .apply a{
   width: 20vw;
   padding: 2px;
@@ -236,7 +236,7 @@ margin-left: 2vw;
   border: 1px solid #f1f1f1;
   border-radius: 8px;
   height: 200px;
-  width: 1000px;
+  min-width: 500px;
   overflow-y: scroll;
 }
 @media(max-width:670px){
