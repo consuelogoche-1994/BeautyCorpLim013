@@ -22,4 +22,9 @@ describe('FooterPaymentsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+         
 });

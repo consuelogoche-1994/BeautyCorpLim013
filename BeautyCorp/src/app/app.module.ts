@@ -29,7 +29,13 @@ import { FooterPaymentsComponent } from './components/footer-payments/footer-pay
 import { NavbarPaymentsComponent } from './components/navbar-payments/navbar-payments.component';
 import { ContentPaymentsComponent } from './components/content-payments/content-payments.component';
 import { ItemProductComponent } from './components/item-product/item-product.component';
+
+import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
+
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
+import { LoginComponent } from './views/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +61,10 @@ import { CardProductComponent } from './components/card-product/card-product.com
     NavbarPaymentsComponent,
     ContentPaymentsComponent,
     ItemProductComponent,
+    PaymentsNextComponent,
     CardProductComponent,
+    PaymentDoneComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
