@@ -1,10 +1,10 @@
 //cardProduct
 .cardProduct{
-    height: 370px;
+    height: 380px;
     width: 250px;
 }
 .cardImg{
-    height: 60%;
+    height: 50%;
     width: 100%;
     position: relative;
 }
@@ -18,6 +18,8 @@
 }
 .imgProduct img{
     height: 100%;
+    // background-size: cover;
+    // background-position: center;
 }
 .dsctoProduct{
     background-color: #EA0029;
@@ -27,7 +29,7 @@
     padding: 5px ;
 }
 .textProduct{
-    height: 75%;
+    height: 80%;
     text-align: center;
 }
 .textProduct p{
@@ -35,7 +37,7 @@
     margin: 0px;
 }
 .infoProduct{
-    height: 40%;
+    height: 50%;
 }
 .textProduct p i{
     color: rgba(7, 7, 7, 0.753);
@@ -44,10 +46,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+.card-action a{
+    font-size: calc(0.6em + 0.6vw);
+    width: 100%;
 }
 .unid{
     color:  #8052a459;
-    font-size: calc(0.4em + 0.4vw);
+    font-size: calc(0.5em + 0.5vw);
+}
+
+@media (max-width:1024px) {
+    .cardProduct{
+        height: 280px;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cardProduct{
+        height: 220px;
+        width: 141px;
+    }
 }

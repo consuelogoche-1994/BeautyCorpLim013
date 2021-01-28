@@ -34,6 +34,7 @@ import { PaymentsNextComponent } from './components/payments-next/payments-next.
 
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 @NgModule({
@@ -61,11 +62,9 @@ import { PaymentDoneComponent } from './components/payment-done/payment-done.com
     ContentPaymentsComponent,
     ItemProductComponent,
     PaymentsNextComponent,
-
     CardProductComponent,
-
     PaymentDoneComponent,
-
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
