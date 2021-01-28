@@ -1,0 +1,86 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    min-height: 500px;
+    width: 30vw;
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.title{
+    text-align: center;
+    color: #2E2B27;
+    font-size: calc(0.8em + 0.8vw);
+}
+
+.btnLogin{
+    background-color: #8D93BC;
+}
+.btnInv{
+    color: #8D93BC;
+    background-color: #ffffff;
+    border: 1px solid #8D93BC;
+}
+.containerbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recover{
+    font-size: 10px;
+    color: #b6b6b6;
+    text-align: center;
+}
+hr{
+    background-color:  #8D93BC;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) + label{
+color: #8D93BC;
+
+}
+input[type=email]:not(.browser-default):focus{
+    color: #8D93BC;
+    border-bottom: #8D93BC;
+    box-shadow: 0 1px 0 0 #8D93BC;
+    }
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+    color: #8D93BC;
+
+}
+input[type=password]:not(.browser-default):focus{
+    color: #8D93BC;
+    border-bottom: #8D93BC;
+    box-shadow: 0 1px 0 0 #8D93BC;
+}
+.btnGoogle{
+    text-align: center;
+    height: 40px;
+    margin-bottom: 20px;
+    
+}
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+    border: 2px solid #8D93BC;
+    background-color: #8D93BC;
+}
+.btn-floating{
+    background-color: #8D93BC;
+}
+
+@media (max-width:1024px) {
+    .card{
+        width: 60vw;
+    }
+}
+@media screen and (max-width: 575px) {
+    .card{
+        width: 100vw;
+    }
+
+}

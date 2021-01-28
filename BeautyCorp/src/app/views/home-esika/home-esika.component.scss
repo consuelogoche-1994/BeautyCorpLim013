@@ -22,11 +22,21 @@
     font-size: calc(0.8em + 0.8vw);
     color:#333F49;
 }
-.prueba{
-    background-color: brown;
-    height: 200px;
+// .prueba{
+//     background-color: brown;
+//     height: 200px;
+// }
+.containerProd{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #fff;
 }
-
+.header{
+    color:#8D93BC;
+    font-size: calc(0.8em + 0.8vw);
+    text-align: center;
+}
 
 //Media Query
 @media screen and (max-width: 1024px) {

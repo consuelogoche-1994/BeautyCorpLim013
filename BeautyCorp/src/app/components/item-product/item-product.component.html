@@ -7,24 +7,11 @@
         <div class="Detail">
             <div id="container">
                 <div class="product-image">
-                    <img src="https://cdn1-prd.beautymovers.com/sys-master/s3medias/h60/h46/10599977353246/200092434_imagenProducto_prodGallery_superZoom"
-                        alt="Omar Dsoky">
-                    <!-- 	product Information-->
+                    <img src="{{detailProduct.imgUrl}}" alt="Omar Dsoky">
                 </div>
-                <!-- Start	Product details -->
                 <div class="product-details">
-                    <!-- 	Product Name -->
                     <h1>{{detailProduct.name}}</h1>
-                    <!-- 		<span class="hint new">New</span> -->
-                    <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
-                    <!-- 		the Product rating -->
-                    <!-- <span class="hint-star star">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </span> -->
+ 
                     <form>
                         <p class="clasificacion">
                           <input id="radio1" type="radio" name="estrellas" value="5"><!--
@@ -39,7 +26,7 @@
                           --><label for="radio5"><i class="fa fa-star" aria-hidden="true"></i></label>
                         </p>
                       </form>
-                    <div><a>S/. 60.00</a></div>
+                    <div><a>S/.</a><label id="valuePrice">{{detailProduct.price}}</label></div>
                     <!-- The most important information about the product -->
                     <p class="information">Detalle del producto</p>
                     <div class="quantity">
@@ -53,12 +40,7 @@
                     <div class="control">
             
                         <!-- Start Button buying -->
-                        <button class="btn">
-                            <!-- 		the Price -->
-                            <!-- <span class="price">S/60</span> -->
-                            <!-- 		shopping cart icon-->
-                            <!-- <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> -->
-                            <!-- 		Buy Now / ADD to Cart-->
+                        <button class="btn" (click)="buy(detailProduct.id,detailProduct.name,detailProduct.price,detailProduct.imgUrl)">
                             <span class="buy">AÑADIR A CARRITO</span>
                         </button>
                         <!-- End Button buying -->
