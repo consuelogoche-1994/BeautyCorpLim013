@@ -6,53 +6,15 @@
         <h6>Pago</h6>
         <div id="formInformation" class="row">
             <a [routerLink]="['/esikaPayments', 'paymentsNext']"class="slide waves-effect waves-light btn">Tarjeta de crédito y/o débito</a>
-            <a [routerLink]="['/esikaPayments', 'paymentsTransference']" class="slide waves-effect waves-light btn">Transferencias</a>
+            <a [routerLink]="['/esikaPayments', 'paymentsTransference']"class="slide waves-effect waves-light btn">Transferencias</a>
             <a [routerLink]="['/esikaPayments', 'paymentsYape']"class="slide waves-effect waves-light btn">Yape</a>
-            <div class="creditCard">
-                <div>
-                    <div class="space row">
-                        <div class="adjust col">
-                            <label>Tipo</label>
-                            <select class="browser-default">
-                                <option value="" disabled selected>Escoge</option>
-                                <option value="1">Crédito</option>
-                                <option value="2">Débito</option>
-                            </select>
-                        </div>
-                        <div class="adjust col ">
-                            <label for="first_name">Número de la tarjeta</label>
-                            <input id="first_name" type="number" class="validate">
-                        </div>
-                    </div>
-                    <div class="space row">
-                        <div class="full col">
-                            <label for="first_name">Nombres y apellidos</label>
-                            <input id="first_name" type="text" class="validate">
-                        </div>
-                    </div>
-                    <div class="space row">
-                        <div class="adjust col">
-                            <div class="col">
-                                <label for="last_name">Mes y año</label><br>
-                                <input id="last_name" type="month" class="validate">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <label for="last_name">Código de seguridad</label>
-                            <input id="last_name" type="text" class="validate">
-                        </div>
-                    </div>
-                </div>
+            <div class="Yape">
+                <p>Con el siguiente código QR puedes realizar el pago a través de yape</p>
+                <div class="space row">
+                <img src="https://www.yape.com.pe/assets/images/logo.png" width="70px" height="70px">
+                <img id="qr" src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/5c70554504286350d08843e2/images/5e99c4e02c7d3a7e9aeb24ec/file-EhPYULrV29.png">
             </div>
-            <div class="transference">
-                <p>Realiza una Transferencia bancaria mediante tu banca por internet <br>O<br>
-                    Realiza un Depósito en efectivo a nombre de PAGOEFECTIVO.</p>
-                    <img src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/banks.png?raw=true">
-                    <ol>
-                        <li>Acepta los Términos y Condiciones y haz click en “Reservar compra”, te enviaremos un mail con el número de orden y la cuenta bancaria. </li>
-                        <li>Dirigete a algunos de los lugares de pago o por tu banca por internet con el código que recibirás en tu correo electrónico. </li>
-                    </ol>
-                </div>
+            </div>
             <div class="checkNews">
                 <p>
                     <input type="checkbox" id="test5" />

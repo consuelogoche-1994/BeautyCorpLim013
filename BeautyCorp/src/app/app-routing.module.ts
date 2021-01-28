@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ItemProductComponent } from './components/item-product/item-product.component';
 import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
+import { PaymentTransferenceComponent } from './components/payment-transference/payment-transference.component';
 import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
+import { PaymentYapeComponent } from './components/payment-yape/payment-yape.component';
 import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
 import { EsikaComponent } from './mainViews/esika/esika.component';
 import { HomeComponent } from './mainViews/home/home.component';
@@ -42,6 +44,8 @@ children: [
   {path:'contentPayments', component:ContentPaymentsComponent},
   {path:'paymentsNext', component:PaymentsNextComponent},
   {path:'paymentsDone', component:PaymentDoneComponent},
+  {path:'paymentsTransference', component:PaymentTransferenceComponent},
+  {path:'paymentsYape', component:PaymentYapeComponent},
 ]
 },
 
