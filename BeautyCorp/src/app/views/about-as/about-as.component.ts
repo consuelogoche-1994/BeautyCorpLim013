@@ -7,7 +7,7 @@ declare const M: any;
 })
 
 export class AboutAsComponent implements OnInit {
-  options:any={indicators: true};
+  options:any={indicators: true,fullWidth: true};
   constructor() { }
 
   ngOnInit(): void {
