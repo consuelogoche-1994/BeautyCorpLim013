@@ -16,6 +16,7 @@ import { MakeupComponent } from './views/makeup/makeup.component';
 import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.component';
 import { PerfumeComponent } from './views/perfume/perfume.component';
 import { PersonalCareComponent } from './views/personal-care/personal-care.component';
+import { ContentPaymentsComponent } from './components/content-payments/content-payments.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent,
@@ -35,11 +36,15 @@ const routes: Routes = [
     {path: 'accessories', component: AccessoriesComponent},
   ]
 },
-{path:'payments', component:EsikaPaymentsComponent},
-{path:'itemProduct', component:ItemProductComponent},
-{path:'payments2', component:PaymentsNextComponent},
-{path:'payments3', component:PaymentDoneComponent}
-{path:'login', component: LoginComponent}
+{path:'esikaPayments', component:EsikaPaymentsComponent,
+children: [
+  {path:'', component: LoginComponent},
+  {path:'contentPayments', component:ContentPaymentsComponent},
+  {path:'paymentsNext', component:PaymentsNextComponent},
+]
+},
+
+
 
 ];
 
