@@ -80,7 +80,7 @@
         <div class="flex detail">
             <div class="col s12 m7">
                 <div class="card horizontal">
-                    <div class="card-image">
+                    <!-- <div class="card-image">
                         <img
                             src="https://cdn.shopify.com/s/files/1/2770/4310/products/esika-estados-unidos-plumon-tattoo-punta-fina.jpg?v=1598758790">
                     </div>
@@ -93,7 +93,26 @@
                             <p>Color: negro</p>
                             <p>Cantidad: 1 unidad</p>
                         </div>
-                    </div>
+                    </div> -->
+
+
+                <section class="shopping-cart">
+                    <section class="itemP" *ngFor="let product of orderDetail; index as i">
+                        <div class="imgP">
+                            <img src="{{product.imgUrl}}">
+                        </div>
+                        <div class="textP">
+                            <div><i class="fas fa-angle-right"></i> {{product.name}}</div>
+                            <div><i class="fas fa-angle-right"></i> {{product.quantity}} Unidades X S/{{product.promotionPrice}}</div>
+                            <div>S/{{product.subtotal}}</div> 
+                        </div>
+                        <div class="deleteP">
+                            <i class="fas fa-times" (click)="deleteProduct(i,product)"></i>
+                        </div>
+                    </section>
+                </section>
+
+
                 </div>
             </div>
             <div class="order col s6">
