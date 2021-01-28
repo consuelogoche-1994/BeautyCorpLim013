@@ -12,40 +12,68 @@
                 <li><a routerLink="facialTreatment">TRATAMIENTO FACIAL</a></li>
                 <li><a routerLink="bodyTreatment">TRATAMIENTO CORPORAL</a></li>
                 <li><a routerLink="accessories">ACCESORIOS COSMÉTICOS</a></li>
-                <li><a routerLink="/"><i class="fas fa-user"></i></a></li>
+                <li><a routerLink="/esikaPayments"><i class="fas fa-user"></i></a></li>
                 <li><a (click)="cart()"><i class="fas fa-shopping-cart"></i></a></li>
                 <li><a routerLink="/"><i class="fas fa-search"></i></a></li>
+
+
             </ul>
         </div>
-        <div id="shopping-cart" class="shopping-cart hidden">
-            <p class="p">Carrito de compras</p>
-            <tr *ngFor="let product of products; index as i">
-                <div class="item-cart">
-                    <div class="product-image">
-                        <img src="{{product.imgUrl}}" alt="Omar Dsoky">
 
-                    </div>
-                    <div class="name-product">
-                        <div class="icon-exit" (click)="exit(product.id)"><i class="fas fa-times"></i></div>
-                        <div class="name">
-                            <p>{{product.name}}</p>
-                        </div>
-                        <div class="price">{{product.qty}} x {{product.price}}</div>
+    </nav>
 
-                    </div>
 
+    <div id="shopping-cart" class="shopping-cart hidden">
+        <p class="p">Carrito de compras</p>
+        <!-- <tr *ngFor="let product of orderDetail; index as i">
+            <div class="item-cart">
+                <div class="product-image">
+                    <img src="{{product.imgUrl}}">
                 </div>
+
             </tr>
             <div>
-                <button class="btn">
+                <button [routerLink]="['/esikaPayments', 'contentPayments']" class="btn">
                     <span class="buy">IR A PAGAR</span>
                 </button>
+
+                <div class="name-product">
+                    <div class="icon-exit" (click)="exit(product.id)"><i class="fas fa-times"></i></div>
+                    <div class="name">
+                        <p>{{product.name}}</p>
+                    </div>
+                    <div class="price">{{product.quantity}} Unidades</div>
+                    <div class="price">{{product.promotionPrice}}</div>
+                </div>
             </div>
+        </tr> -->
+        <section class="itemP" *ngFor="let product of orderDetail; index as i">
+            <div class="imgP">
+                <img src="{{product.imgUrl}}">
+
+            </div>
+            <div class="textP">
+                <div><i class="fas fa-angle-right"></i> {{product.name}}</div>
+                <div><i class="fas fa-angle-right"></i> {{product.quantity}} Unidades X S/{{product.promotionPrice}}</div>
+                <div>S/{{product.subtotal}}</div> 
+            </div>
+            <div class="deleteP">
+                <i class="fas fa-times" (click)="deleteProduct(i,product)"></i>
+            </div>
+        </section>
+        <div>
+            <button routerLink="/esikaPayments" class="btn">
+                <span class="buy">IR A PAGAR</span>
+            </button>
         </div>
-    </nav>
-</div>
+    </div>
+
+
 
 </div>
+
+
+
 <ul class="sidenav" id="mobile-demo">
     <li><a routerLink="/esika">INICIO</a></li>
     <li><a routerLink="makeup">MAQUILLAJE</a></li>
@@ -54,7 +82,7 @@
     <li><a routerLink="facialTreatment">TRATAMIENTO FACIAL</a></li>
     <li><a routerLink="bodyTreatment">TRATAMIENTO CORPORAL</a></li>
     <li><a routerLink="accessories">ACCESORIOS COSMÉTICOS</a></li>
-    <li><a routerLink="/">INICIAR SESIÓN</a></li>
+    <li><a routerLink="/esikaPayments">INICIAR SESIÓN</a></li>
     <li><a routerLink="/">CARRITO DE COMPRAS</a></li>
 </ul>
 

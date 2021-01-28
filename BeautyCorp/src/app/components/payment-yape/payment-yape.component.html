@@ -1,0 +1,83 @@
+<div class="superContainer flex">
+    <div class="flex register">
+        <img id="step2"
+            src="https://github.com/IllariLaksmi/BeautyCorpLim013/blob/main/BeautyCorp/src/assets/img/step3.png?raw=true"
+            alt="">
+        <h6>Pago</h6>
+        <div id="formInformation" class="row">
+            <a [routerLink]="['/esikaPayments', 'paymentsNext']"class="slide waves-effect waves-light btn">Tarjeta de crédito y/o débito</a>
+            <a [routerLink]="['/esikaPayments', 'paymentsTransference']"class="slide waves-effect waves-light btn">Transferencias</a>
+            <a [routerLink]="['/esikaPayments', 'paymentsYape']"class="slide waves-effect waves-light btn">Yape</a>
+            <div class="Yape">
+                <p>Con el siguiente código QR puedes realizar el pago a través de yape</p>
+                <div class="space row">
+                <img src="https://www.yape.com.pe/assets/images/logo.png" width="70px" height="70px">
+                <img id="qr" src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/5c70554504286350d08843e2/images/5e99c4e02c7d3a7e9aeb24ec/file-EhPYULrV29.png">
+            </div>
+            </div>
+            <div class="checkNews">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Declaro que he leído y aceptado los Términos y Condiciones</label>
+                </p>
+            </div>
+            <div class="payButtons">
+                <div id="back" class="space row">
+                    <a [routerLink]="['/esikaPayments', 'contentPayments']" class="waves-effect waves-light btn">Volver</a>
+                </div>
+                <div id="continue" class="space row">
+                    <a [routerLink]="['/esikaPayments', 'paymentsDone']" class="adjust waves-effect waves-light btn">Finalizar compra</a>
+                </div>
+            </div>
+            <div class="col s12">
+                <br>
+                <hr>
+                <div class="politics space row">
+                    <a>Política de reembolso</a>
+                    <a>Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="flex detail">
+            <div class="col s12 m7">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/2770/4310/products/esika-estados-unidos-plumon-tattoo-punta-fina.jpg?v=1598758790">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="description">
+                                <h6 class="col">Delineador</h6>
+                                <p>S/50.00</p>
+                            </div>
+                            <p>Color: negro</p>
+                            <p>Cantidad: 1 unidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order col s6">
+                <div>
+                    <label for="discount">¿Tienes algún cupón de descuento?</label>
+                    <input id="discount" type="text" class="validate">
+                </div>
+                <a id="apply" class="apply waves-effect waves-light btn">Aplicar</a>
+            </div>
+            <hr>
+            <div class="description">
+                <p>Subtotal:</p>
+                <p>S/00.00</p>
+            </div>
+            <div class="description">
+                <p>Costo de envío: </p>
+                <p>S/00.00</p>
+            </div>
+            <hr>
+            <div class="description">
+                <p>Total: </p>
+                <p>S/00.00</p>
+            </div>
+        </div>
+</div>

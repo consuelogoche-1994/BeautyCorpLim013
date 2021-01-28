@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ItemProductComponent } from './components/item-product/item-product.component';
 import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
+import { PaymentTransferenceComponent } from './components/payment-transference/payment-transference.component';
 import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
+import { PaymentYapeComponent } from './components/payment-yape/payment-yape.component';
 import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
 import { EsikaComponent } from './mainViews/esika/esika.component';
 import { HomeComponent } from './mainViews/home/home.component';
@@ -16,6 +18,7 @@ import { MakeupComponent } from './views/makeup/makeup.component';
 import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.component';
 import { PerfumeComponent } from './views/perfume/perfume.component';
 import { PersonalCareComponent } from './views/personal-care/personal-care.component';
+import { ContentPaymentsComponent } from './components/content-payments/content-payments.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent,
@@ -35,11 +38,18 @@ const routes: Routes = [
     {path: 'accessories', component: AccessoriesComponent},
   ]
 },
-{path:'payments', component:EsikaPaymentsComponent},
-{path:'itemProduct', component:ItemProductComponent},
-{path:'payments2', component:PaymentsNextComponent},
-{path:'payments3', component:PaymentDoneComponent}
-{path:'login', component: LoginComponent}
+{path:'esikaPayments', component:EsikaPaymentsComponent,
+children: [
+  {path:'', component: LoginComponent},
+  {path:'contentPayments', component:ContentPaymentsComponent},
+  {path:'paymentsNext', component:PaymentsNextComponent},
+  {path:'paymentsDone', component:PaymentDoneComponent},
+  {path:'paymentsTransference', component:PaymentTransferenceComponent},
+  {path:'paymentsYape', component:PaymentYapeComponent},
+]
+},
+
+
 
 ];
 

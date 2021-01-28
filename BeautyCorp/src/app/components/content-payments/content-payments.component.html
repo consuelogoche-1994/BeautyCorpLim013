@@ -6,8 +6,8 @@
       <form class="col s12">
         <div class="space row">
           <div class="col ">
-            <label for="first_name">Nombre</label>
-            <input id="first_name" type="text" class="validate">
+            <label for="saleName">Nombre</label>
+            <input id="saleName" type="text" class="validate">
           </div>
           <div class="col">
             <label for="last_name">Apellido</label>
@@ -39,7 +39,7 @@
       </form>
     </div>
     <div class="col s12">
-      <form>
+      <div>
         <h6>Entrega</h6>
         <div class="space row">
           <div class="col">
@@ -91,9 +91,9 @@
         </div>
       </div>
       <div id="continue" class="space row">
-        <a class="waves-effect waves-light btn">Continuar</a>
+        <a [routerLink]="['/esikaPayments', 'paymentsNext']" class="waves-effect waves-light btn" >Continuar</a>
       </div>
-    </form>
+    </div>
 
     <br>
         <hr>
@@ -105,8 +105,8 @@
   </div>
   <div class="flex detail">
     <div class="col s12 m7">
-      <div class="card horizontal">
-        <div class="card-image">
+      <!-- <div class="card horizontal"> -->
+        <!-- <div class="card-image">
           <img src="https://cdn.shopify.com/s/files/1/2770/4310/products/esika-estados-unidos-plumon-tattoo-punta-fina.jpg?v=1598758790">
         </div>
         <div class="card-stacked">
@@ -118,8 +118,26 @@
             <p>Color: negro</p>
             <p>Cantidad: 1 unidad</p>
           </div>
-        </div>
-      </div>
+        </div> -->
+
+      <section class="shopping-cart">
+        <section class="itemP" *ngFor="let product of orderDetail; index as i">
+          <div class="imgP">
+              <img src="{{product.imgUrl}}">
+          </div>
+          <div class="textP">
+              <div><i class="fas fa-angle-right"></i> {{product.name}}</div>
+              <div><i class="fas fa-angle-right"></i> {{product.quantity}} Unidades X S/{{product.promotionPrice}}</div>
+              <div>S/{{product.subtotal}}</div> 
+          </div>
+          <div class="deleteP">
+              <i class="fas fa-times" (click)="deleteProduct(i,product)"></i>
+          </div>
+      </section>
+    </section>
+
+
+      <!-- </div> -->
     </div>
     <div class="order col s6">
       <div>

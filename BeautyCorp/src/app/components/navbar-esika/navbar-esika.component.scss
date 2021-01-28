@@ -33,16 +33,21 @@ nav{
 @media screen and (min-width: 500px ){
     .shopping-cart{
         color: #333333;
-        float: right;
         margin:20px;
         padding: 20px;
         background-color: #F5F5F5;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
-        overflow: hidden;
         height: 550px;
         width: 370px;
+        color: #333333;
+        padding: 10px;
         overflow: scroll;
+        height: 550px;
+        z-index: 1000;
+        position: fixed;
+        right: 0;
+        margin-top: 65px;
     
     }
     .icon-exit {
@@ -97,9 +102,9 @@ nav{
     /* float: none; */
     margin-bottom: 10px;
 }
-.name-product div{
-    // margin-right: 20px;
-}
+// .name-product div{
+//     // margin-right: 20px;
+// }
 
 .icon-exit {
     right: 1px;
@@ -116,6 +121,39 @@ nav{
 .name {
     margin-bottom: -40px;
 }
-.p {
+// .p {
+//     text-align: center;
+// }
+///////////////////////////////////////////////////////
+.itemP{
+    height: 95px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+}
+.imgP{
+    width: 30%;
+    height: 100%;
     text-align: center;
+}
+.imgP img{
+    height: 100%;
+
+}
+.textP{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.textP div{
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.deleteP{
+    width: 10%;
+    height: 100%;
+}
+.deleteP i{
+    cursor: pointer;
 }

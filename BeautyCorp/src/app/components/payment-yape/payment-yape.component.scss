@@ -7,7 +7,10 @@
 .transference{
   display: none;
 }
-
+#qr{
+    width: 20vw;
+    height: 20vw;;
+}
 .payButtons{
     display: flex;
     flex-direction: row ;
@@ -26,9 +29,9 @@ a:active {
     border-bottom: solid 5px  #6985A1;
   }
 
-// img {
-//     margin: 2vw;
-//   }
+img {
+    margin: 2vw;
+  }
 
   .register {
     width: 55vw;
@@ -246,48 +249,3 @@ a:active {
       width: 200vw;
   }
   }
-
-  ////////////////////////////////////////////////////////
-.itemP{
-  height: 95px;
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 15px;
-}
-.imgP{
-  width: 30%;
-  height: 100%;
-  text-align: center;
-}
-.imgP img{
-  height: 100%;
-
-}
-.textP{
-  width: 60%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-}
-.textP div{
-  font-size: calc(0.5em + 0.5vw);
-}
-
-.deleteP{
-  width: 10%;
-  height: 100%;
-}
-.deleteP i{
-  cursor: pointer;
-}
-
-.shopping-cart{
-  margin:20px;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #f1f1f1;
-  border-radius: 8px;
-  height: 200px;
-  min-width: 500px;
-  overflow-y: scroll;
-}

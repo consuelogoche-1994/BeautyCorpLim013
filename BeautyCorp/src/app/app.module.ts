@@ -35,6 +35,8 @@ import { PaymentsNextComponent } from './components/payments-next/payments-next.
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
 import { LoginComponent } from './views/login/login.component';
+import { PaymentTransferenceComponent } from './components/payment-transference/payment-transference.component';
+import { PaymentYapeComponent } from './components/payment-yape/payment-yape.component';
 
 
 @NgModule({
@@ -65,6 +67,8 @@ import { LoginComponent } from './views/login/login.component';
     CardProductComponent,
     PaymentDoneComponent,
     LoginComponent,
+    PaymentTransferenceComponent,
+    PaymentYapeComponent,
   ],
   imports: [
     BrowserModule,

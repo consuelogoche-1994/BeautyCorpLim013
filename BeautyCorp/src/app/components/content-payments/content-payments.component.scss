@@ -1,6 +1,6 @@
-img {
-  margin: 2vw;
-}
+// img {
+//   margin: 2vw;
+// }
 .register {
   width: 55vw;
   border-right: solid #e5e5e5 1px;
@@ -131,10 +131,10 @@ hr{
 .description p{
   margin:2vw 0vw;
 }
-.card-image img {
-  width: 10vw;
-  height: 5vw;
-}
+// .card-image img {
+//   width: 10vw;
+//   height: 5vw;
+// }
 @media(max-width:1070px){
   .superContainer{
     display: flex;
@@ -163,11 +163,11 @@ hr{
   width:40vw;
   height:40vw;
 }
-.card-image img {
-  width:20vw;
-  height:20vw;
-  max-width: 40vw;
-}
+// .card-image img {
+//   width:20vw;
+//   height:20vw;
+//   max-width: 40vw;
+// }
 .apply a{
   margin-left: 10vw;
   width: 30vw;
@@ -191,4 +191,49 @@ hr{
   width:70vw;
   margin-left: 2vw;
 }
+}
+
+////////////////////////////////////////////////////////
+.itemP{
+  height: 95px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 15px;
+}
+.imgP{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+.imgP img{
+  height: 100%;
+
+}
+.textP{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.textP div{
+  font-size: calc(0.5em + 0.5vw);
+}
+
+.deleteP{
+  width: 10%;
+  height: 100%;
+}
+.deleteP i{
+  cursor: pointer;
+}
+
+.shopping-cart{
+  margin:20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  height: 200px;
+  min-width: 500px;
+  overflow-y: scroll;
 }
