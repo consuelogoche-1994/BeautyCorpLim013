@@ -33,6 +33,7 @@ import { ItemProductComponent } from './components/item-product/item-product.com
 import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
 
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
 import { LoginComponent } from './views/login/login.component';
 
 
@@ -61,11 +62,9 @@ import { LoginComponent } from './views/login/login.component';
     ContentPaymentsComponent,
     ItemProductComponent,
     PaymentsNextComponent,
-
     CardProductComponent,
-
+    PaymentDoneComponent,
     LoginComponent,
-
   ],
   imports: [
     BrowserModule,

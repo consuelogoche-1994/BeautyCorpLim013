@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ItemProductComponent } from './components/item-product/item-product.component';
 import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
+import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
 import { EsikaPaymentsComponent } from './mainViews/esika-payments/esika-payments.component';
 import { EsikaComponent } from './mainViews/esika/esika.component';
 import { HomeComponent } from './mainViews/home/home.component';
@@ -37,7 +38,9 @@ const routes: Routes = [
 {path:'payments', component:EsikaPaymentsComponent},
 {path:'itemProduct', component:ItemProductComponent},
 {path:'payments2', component:PaymentsNextComponent},
+{path:'payments3', component:PaymentDoneComponent}
 {path:'login', component: LoginComponent}
+
 ];
 
 @NgModule({
