@@ -10,6 +10,7 @@ import { AccessoriesComponent } from './views/accessories/accessories.component'
 import { BodyTreatmentComponent } from './views/body-treatment/body-treatment.component';
 import { FacialTreatmentComponent } from './views/facial-treatment/facial-treatment.component';
 import { HomeEsikaComponent } from './views/home-esika/home-esika.component';
+import { LoginComponent } from './views/login/login.component';
 import { MakeupComponent } from './views/makeup/makeup.component';
 import { OurCatalogsComponent } from './views/our-catalogs/our-catalogs.component';
 import { PerfumeComponent } from './views/perfume/perfume.component';
@@ -35,7 +36,8 @@ const routes: Routes = [
 },
 {path:'payments', component:EsikaPaymentsComponent},
 {path:'itemProduct', component:ItemProductComponent},
-{path:'payments2', component:PaymentsNextComponent}
+{path:'payments2', component:PaymentsNextComponent},
+{path:'login', component: LoginComponent}
 ];
 
 @NgModule({

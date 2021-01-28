@@ -1,10 +1,10 @@
 //cardProduct
 .cardProduct{
-    height: 370px;
+    height: 380px;
     width: 250px;
 }
 .cardImg{
-    height: 60%;
+    height: 50%;
     width: 100%;
     position: relative;
 }
@@ -27,7 +27,7 @@
     padding: 5px ;
 }
 .textProduct{
-    height: 75%;
+    height: 80%;
     text-align: center;
 }
 .textProduct p{
@@ -35,7 +35,7 @@
     margin: 0px;
 }
 .infoProduct{
-    height: 40%;
+    height: 50%;
 }
 .textProduct p i{
     color: rgba(7, 7, 7, 0.753);
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 20%;
     cursor: pointer;
 }
 .unid{
