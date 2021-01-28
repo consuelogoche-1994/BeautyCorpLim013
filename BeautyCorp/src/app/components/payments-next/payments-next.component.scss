@@ -26,9 +26,9 @@ a:active {
     border-bottom: solid 5px  #6985A1;
   }
 
-img {
-    margin: 2vw;
-  }
+// img {
+//     margin: 2vw;
+//   }
 
   .register {
     width: 55vw;
@@ -288,6 +288,6 @@ img {
   border: 1px solid #f1f1f1;
   border-radius: 8px;
   height: 200px;
-  width: 1000px;
+  min-width: 500px;
   overflow-y: scroll;
 }
