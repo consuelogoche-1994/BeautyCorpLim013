@@ -111,11 +111,9 @@ hr{
 }
 .apply{
   background-color: #8D93BC;
-  padding: 1vw;
-  height: 55px;
-  width: 150px;
-  font-size: large;
-  margin: 1vw;
+  font-size: small;
+  width: 10vw;
+  margin: 1.5vw 2vw;
 }
 .order{
   display: flex;
@@ -127,9 +125,11 @@ hr{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: left;
+
 }
 .description p{
-  margin:2vw 0vw;
+margin-left: 2vw;
 }
 .card-image img {
   width: 10vw;
@@ -141,13 +141,16 @@ hr{
     flex-direction: column-reverse;
     justify-content: start;
 }
+#continue{
+  margin-right: 0;
+}
 .card-content{
   max-width: 100%;
   padding: 0;
 }
   #step2{
-  width:100% ;
-  height: 50%;
+  width:80% ;
+  height: 40%;
 }
 .register{
   width: 100vw;
@@ -169,10 +172,10 @@ hr{
   max-width: 40vw;
 }
 .apply a{
-  margin-left: 10vw;
-  width: 30vw;
-  max-width: 50vw;
-  margin-top: 30px;
+  width: 20vw;
+  padding: 2px;
+  height: 30px;
+  font-size: x-small;
 }
 .col, select, #start{
   width: 80vw;
@@ -187,9 +190,8 @@ hr{
   width:40vw;
 }
 #apply{
-  margin-top:10 vw;
-  width:70vw;
-  margin-left: 2vw;
+  margin-top: 0vw;
+  font-size: x-small;
 }
 }
 
@@ -236,4 +238,14 @@ hr{
   height: 200px;
   width: 1000px;
   overflow-y: scroll;
+}
+@media(max-width:670px){
+  #apply{
+    margin-top: 2.5vw;
+    width: 30vw;
+  }
+  #apply a{
+    width: 30vw;
+    font-size: x-small;
+  }
 }

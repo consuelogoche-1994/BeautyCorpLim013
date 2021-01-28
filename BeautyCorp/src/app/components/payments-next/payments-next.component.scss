@@ -142,11 +142,9 @@ img {
   }
   .apply{
     background-color: #8D93BC;
-    padding: 1vw;
-    height: 55px;
-    width: 150px;
-    font-size: large;
-    margin: 1vw;
+    font-size: small;
+    width: 10vw;
+    margin: 1.5vw 2vw;
   }
   .order{
     display: flex;
@@ -160,7 +158,7 @@ img {
     justify-content: space-between;
   }
   .description p{
-    margin:2vw 0vw;
+    margin-left:2vw;
   }
   .card-image img {
     width: 10vw;
@@ -212,10 +210,9 @@ img {
     max-width: 40vw;
   }
   .apply a{
-    margin-left: 10vw;
-    width: 30vw;
-    max-width: 50vw;
-    margin-top: 30px;
+    width: 20vw;
+    padding: 2px;
+    height: 30px;
     font-size: x-small;
   }
   .col, select, #start{
@@ -228,9 +225,8 @@ img {
     width:40vw;
   }
   #apply{
-    margin-top:10 vw;
-    width:70vw;
-    margin-left: 2vw;
+    margin-top: 0vw;
+    font-size: x-small;
   }
   #step2{
       margin: 0;
@@ -245,4 +241,30 @@ img {
   #politics a{
       width: 200vw;
   }
+  }
+  @media(max-width:670px){
+    #apply{
+      margin-top: 2.5vw;
+      width: 30vw;
+    }
+    #apply a{
+      width: 30vw;
+      font-size: x-small;
+    }
+    .apply{
+      margin-top: 2.5vw;
+      width: 30vw;
+    }
+    .apply a{
+      width: 30vw;
+      font-size: x-small;
+    }
+    #continue a{
+      width: 20vw;
+      font-size: xx-small;
+    }
+    #back a{
+      width: 20vw;
+      font-size: x-small;
+    }
   }
