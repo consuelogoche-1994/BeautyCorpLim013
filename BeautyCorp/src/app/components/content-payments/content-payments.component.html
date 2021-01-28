@@ -6,8 +6,8 @@
       <form class="col s12">
         <div class="space row">
           <div class="col ">
-            <label for="first_name">Nombre</label>
-            <input id="first_name" type="text" class="validate">
+            <label for="saleName">Nombre</label>
+            <input id="saleName" type="text" class="validate">
           </div>
           <div class="col">
             <label for="last_name">Apellido</label>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div id="continue" class="space row">
-        <a routerLink="paymentsNext" class="waves-effect waves-light btn" >Continuar</a>
+        <a [routerLink]="['/esikaPayments', 'paymentsNext']" class="waves-effect waves-light btn" >Continuar</a>
       </div>
     </div>
 

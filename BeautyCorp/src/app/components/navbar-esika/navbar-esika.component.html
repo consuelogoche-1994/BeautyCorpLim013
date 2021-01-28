@@ -30,6 +30,13 @@
                 <div class="product-image">
                     <img src="{{product.imgUrl}}">
                 </div>
+
+            </tr>
+            <div>
+                <button [routerLink]="['/esikaPayments', 'contentPayments']" class="btn">
+                    <span class="buy">IR A PAGAR</span>
+                </button>
+
                 <div class="name-product">
                     <div class="icon-exit" (click)="exit(product.id)"><i class="fas fa-times"></i></div>
                     <div class="name">
@@ -43,6 +50,7 @@
         <section class="itemP" *ngFor="let product of orderDetail; index as i">
             <div class="imgP">
                 <img src="{{product.imgUrl}}">
+
             </div>
             <div class="textP">
                 <div><i class="fas fa-angle-right"></i> {{product.name}}</div>
@@ -54,7 +62,7 @@
             </div>
         </section>
         <div>
-            <button routerLink="/esikaPayments" class="btn">
+            <button [routerLink]="['/esikaPayments', 'contentPayments']" class="btn">
                 <span class="buy">IR A PAGAR</span>
             </button>
         </div>

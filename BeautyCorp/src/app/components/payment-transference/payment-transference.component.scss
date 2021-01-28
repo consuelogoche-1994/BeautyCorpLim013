@@ -5,9 +5,15 @@
     box-shadow: none;
 }
 .transference{
+  text-align: center;
+}
+.transference li{
+  text-align: left;
+  margin-bottom: 1vw;
+}
+.creditCard{
   display: none;
 }
-
 .payButtons{
     display: flex;
     flex-direction: row ;
