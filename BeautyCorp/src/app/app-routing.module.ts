@@ -41,6 +41,7 @@ children: [
   {path:'', component: LoginComponent},
   {path:'contentPayments', component:ContentPaymentsComponent},
   {path:'paymentsNext', component:PaymentsNextComponent},
+  {path:'paymentsDone', component:PaymentDoneComponent},
 ]
 },
 

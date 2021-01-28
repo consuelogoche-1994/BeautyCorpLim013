@@ -61,10 +61,10 @@
             </div>
             <div class="payButtons">
                 <div id="back" class="space row">
-                    <a class="waves-effect waves-light btn">Volver</a>
+                    <a [routerLink]="['/esikaPayments', 'contentPayments']" class="waves-effect waves-light btn">Volver</a>
                 </div>
                 <div id="continue" class="space row">
-                    <a class="adjust waves-effect waves-light btn">Finalizar compra</a>
+                    <a [routerLink]="['/esikaPayments', 'paymentsDone']" class="adjust waves-effect waves-light btn">Finalizar compra</a>
                 </div>
             </div>
             <div class="col s12">
