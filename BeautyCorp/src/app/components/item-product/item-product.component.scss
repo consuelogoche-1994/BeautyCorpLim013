@@ -241,7 +241,7 @@ a {
   position: relative;
 }
 .close{
-  color: #21388B;
+  color: #333F49;
   font-size: calc(1em + 1vw);
   position: absolute;
   background-color: #ffffff;
@@ -252,7 +252,7 @@ a {
   right: 0;
 }
 .close:hover{
-  color: #FDB827;
+  color: #8D93BC;
 }
 .title{
   text-align: center;
@@ -292,7 +292,7 @@ a {
 }
 #container{
 	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
-	background: rgba(255, 255, 255, 0.90);
+	background: rgb(255, 255, 255);
 	text-align: center;
 	overflow: hidden;
 	// height: 350px;

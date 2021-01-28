@@ -97,9 +97,9 @@ nav{
     /* float: none; */
     margin-bottom: 10px;
 }
-.name-product div{
-    // margin-right: 20px;
-}
+// .name-product div{
+//     // margin-right: 20px;
+// }
 
 .icon-exit {
     right: 1px;
@@ -116,6 +116,39 @@ nav{
 .name {
     margin-bottom: -40px;
 }
-.p {
+// .p {
+//     text-align: center;
+// }
+///////////////////////////////////////////////////////
+.itemP{
+    height: 95px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+}
+.imgP{
+    width: 30%;
+    height: 100%;
     text-align: center;
+}
+.imgP img{
+    height: 100%;
+
+}
+.textP{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.textP div{
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.deleteP{
+    width: 10%;
+    height: 100%;
+}
+.deleteP i{
+    cursor: pointer;
 }
