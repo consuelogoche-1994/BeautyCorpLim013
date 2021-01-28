@@ -4,6 +4,13 @@
     border-bottom: solid 3px #979797;
     box-shadow: none;
 }
+.transference{
+  text-align: center;
+}
+.transference li{
+  text-align: left;
+  margin-bottom: 1vw;
+}
 .creditCard{
   display: none;
 }
@@ -171,6 +178,10 @@ img {
       flex-direction: column-reverse;
       justify-content: start;
       margin-left: 5vw ;
+  }
+  .transference{
+    font-size: medium;
+    width: 70vw;
   }
   .description{
       width: 50vw;

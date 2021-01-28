@@ -33,6 +33,7 @@ import { ItemProductComponent } from './components/item-product/item-product.com
 import { PaymentsNextComponent } from './components/payments-next/payments-next.component';
 
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { PaymentDoneComponent } from './components/payment-done/payment-done.component';
 
 
 @NgModule({
@@ -62,6 +63,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
     PaymentsNextComponent,
 
     CardProductComponent,
+
+    PaymentDoneComponent,
 
   ],
   imports: [
